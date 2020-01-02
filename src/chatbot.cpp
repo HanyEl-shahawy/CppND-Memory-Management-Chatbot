@@ -64,7 +64,7 @@ ChatBot& ChatBot::operator=(ChatBot const& rhs) // copy operator
     _image = new wxBitmap(*rhs._image);
     std::cout << "ChatBot Copy Operatpr \n";
 }
-ChatBot::ChatBot(ChatBot&& rhs) noexcept // move constructor
+ChatBot::ChatBot(ChatBot&& rhs) // move constructor
 {
     this->_currentNode = rhs._currentNode;
     this->_rootNode = rhs._rootNode;
@@ -76,7 +76,7 @@ ChatBot::ChatBot(ChatBot&& rhs) noexcept // move constructor
     delete(rhs._image);
     std::cout << "ChatBot Move Constructor \n";
 }
-ChatBot& ChatBot::operator=(ChatBot&& rhs) noexcept// move operator
+ChatBot& ChatBot::operator=(ChatBot&& rhs)// move operator
 {
     this->_currentNode = rhs._currentNode;
     this->_rootNode = rhs._rootNode;

@@ -31,8 +31,8 @@ public:
     ////
     ChatBot(ChatBot const& rhs); // copy constructor
     ChatBot& operator=(ChatBot const& rhs); // copy operator
-    ChatBot(ChatBot&& rhs) noexcept; // move constructor
-    ChatBot& operator=(ChatBot&& rhs) noexcept;// move operator
+    ChatBot(ChatBot&& rhs) ; // move constructor
+    ChatBot& operator=(ChatBot&& rhs) ;// move operator
 
     ////
     //// EOF STUDENT CODE
